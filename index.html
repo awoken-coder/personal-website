@@ -5,39 +5,53 @@
         <title>Personal Website</title>
         <link href="styles/reset.css" rel="stylesheet">
         <link href="styles/general.css" rel="stylesheet">
+        <script src="scripts/open-nav-bar.js"> </script>
     </head>
     <body>
-        <div id='container'>
-        <header>
-            <nav>
-                <ul id="navBar">
-                    <li><a href="#AboutMe">About Me</a></li>
-                    <li><a href="#University">University</a></li>
-                    <li><a href="#WebDevelopment">Web Development</a></li>
-                    <li><a href="#SideProjects">Side Projects</a></li>
-                </ul>
-            </nav>
-            <h1 id="title">My Personal Website</h1>
-        </header>
-        <section id="AboutMe">
-            <h1>About Me</h1>
-            <p>Cat ipsum dolor sit amet, x for thinking longingly about tuna brine or lie in the sink all day. Plop down in the middle where everybody walks sit in box. Jump off balcony, onto stranger's head purr for no reason stand with legs in litter box, but poop outside you are a captive audience while sitting on the toilet, pet me, show belly. Shred all toilet paper and spread around the house. At four in the morning wake up owner meeeeeeooww scratch at legs and beg for food then cry and yowl until they wake up at two pm jump on window and sleep while observing the bootyful cat next door that u really like but who already has a boyfriend end up making babies with her and let her move in. Lounge in doorway. Purr when give birth poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls and kitty kitty drink water out of the faucet. </p>
-        </section>
-        <section id="University">
-            <h1>University</h1>
-            <p>cat fur is the new black , yet sleep in the bathroom sink under the bed, so eat fish on floor tuxedo cats always looking dapper, and sleep all day whilst slave is at work, play all night whilst slave is sleeping. Meow scratch at door to be let outside, get let out then scratch at door immmediately after to be let back in. Mewl for food at 4am. Claw at curtains stretch and yawn nibble on tuna ignore human bite human hand rub whiskers on bare skin act innocent mewl for food at 4am lick yarn hanging out of own butt twitch tail in permanent irritation roll over and sun my belly chew master's slippers. </p>
-        </section>
-        <section id="WebDevelopment">
-            <h1>Web Development</h1>
-            <p>Push your water glass on the floor eat and than sleep on your face yet sleeps on my head and human clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken! for refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am so under the bed, and walk on car leaving trail of paw prints on hood and windshield. Cat milk copy park pee walk owner escape bored tired cage droppings sick vet vomit vommit food and eat it again yet pee in the shoe yet attack like a vicious monster. Scratch at the door then walk away scoot butt on the rug.</p>
-        </section>
-        <section id="SideProjects">
-            <h1>Side Projects</h1>
-            <p> The door is opening! how exciting oh, it's you, meh i want to go outside let me go outside nevermind inside is better but leave fur on owners clothes hunt anything that moves, so sit in box. Leave fur on owners clothes purr purr purr until owner pets why owner not pet me hiss scratch meow run in circles, so crusty butthole sit in box. Annoy the old grumpy cat, start a fight and then retreat to wash when i lose wake up human for food at 4am my cat stared at me he was sipping his tea, too humans,humans, humans oh how much they love us felines we are the center of attention they feed, they clean bleghbleghvomit my furball really tie the room together. Making bread on the bathrobe cough furball into food bowl then scratch owner for a new one or making bread on the bathrobe and no, you can't close the door, i haven't decided whether or not i wanna go out 𝕄𝔼𝕆𝕎 and spend all night ensuring people don't sleep sleep all day yet sugar, my siamese, stalks me (in a good way), day and night . Bite nose of your human. Stare at ceiling light cat ass trophy i like frogs and 0 gravity run around the house at 4 in the morning. </p>
-        </section>
-        <footer>
-            <h2>made by João Andrade</h2>
-        </footer>
-        </div id='container'>
+        <div id="mySidenav" class="sideNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><a href="#aboutMe"  class="sideNavLink"></a>About Me</a></li>
+                <li class="sideNavLink"><a href="#university">University</a></li>
+                <li class="sideNavLink"><a href="#webDevelopment">Web Development</a></li>
+                <li class="sideNavLink"><a href="#sideProjects">Side Projects</a></li>
+            </ul>
+        </div>    
+        <div id="main">
+            <div id='container'>
+                <header>
+                    <nav id="navBar">
+                        <img src="images/nav-logo-orange.png" alt="Navigation Logo" height="100" width="100" id="navBarLogo" onclick="openNav()">
+                        <a href="index.html"><img src="images/company-logo.png" alt="Logo" height="100" width="100" id="companyLogo"></a>
+                    </nav>
+                    <h1 id="title">My Personal Website</h1>
+                </header>          
+                <section id="aboutMe">
+                    <h1>About Me</h1>
+                    <p>Cat ipsum dolor sit amet, x for thinking longingly about tuna brine or lie in the sink all day. Plop down in the middle where everybody walks sit in box. Jump off balcony, onto stranger's head purr for no reason stand with legs in litter box, but poop outside you are a captive audience while sitting on the toilet, pet me, show belly. Shred all toilet paper and spread around the house. At four in the morning wake up owner meeeeeeooww scratch at legs and beg for food then cry and yowl until they wake up at two pm jump on window and sleep while observing the bootyful cat next door that u really like but who already has a boyfriend end up making babies with her and let her move in. Lounge in doorway. Purr when give birth poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls and kitty kitty drink water out of the faucet. </p>
+                </section>
+                <section id="university">
+                    <div id="universityTitle">
+                        <h1>University</h1>
+                        <img src="images/logoTecnico.jpg" alt="University Logo" width=200>
+                    </div>
+                    <p>cat fur is the new black , yet sleep in the bathroom sink under the bed, so eat fish on floor tuxedo cats always looking dapper, and sleep all day whilst slave is at work, play all night whilst slave is sleeping. Meow scratch at door to be let outside, get let out then scratch at door immmediately after to be let back in. Mewl for food at 4am. Claw at curtains stretch and yawn nibble on tuna ignore human bite human hand rub whiskers on bare skin act innocent mewl for food at 4am lick yarn hanging out of own butt twitch tail in permanent irritation roll over and sun my belly chew master's slippers. </p>
+                </section>
+                <section id="webDevelopment">
+                    <h1>Web Development</h1>
+                    <p>Push your water glass on the floor eat and than sleep on your face yet sleeps on my head and human clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken! for refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am so under the bed, and walk on car leaving trail of paw prints on hood and windshield. Cat milk copy park pee walk owner escape bored tired cage droppings sick vet vomit vommit food and eat it again yet pee in the shoe yet attack like a vicious monster. Scratch at the door then walk away scoot butt on the rug.</p>
+                </section>
+                <section id="sideProjects">
+                    <h1>Side Projects</h1>
+                    <p> The door is opening! how exciting oh, it's you, meh i want to go outside let me go outside nevermind inside is better but leave fur on owners clothes hunt anything that moves, so sit in box. Leave fur on owners clothes purr purr purr until owner pets why owner not pet me hiss scratch meow run in circles, so crusty butthole sit in box. Annoy the old grumpy cat, start a fight and then retreat to wash when i lose wake up human for food at 4am my cat stared at me he was sipping his tea, too humans,humans, humans oh how much they love us felines we are the center of attention they feed, they clean bleghbleghvomit my furball really tie the room together. Making bread on the bathrobe cough furball into food bowl then scratch owner for a new one or making bread on the bathrobe and no, you can't close the door, i haven't decided whether or not i wanna go out 𝕄𝔼𝕆𝕎 and spend all night ensuring people don't sleep sleep all day yet sugar, my siamese, stalks me (in a good way), day and night . Bite nose of your human. Stare at ceiling light cat ass trophy i like frogs and 0 gravity run around the house at 4 in the morning. </p>
+                </section>
+                <footer>
+                    <ul id="footerList">
+                    <li>made by <a href="https://www.linkedin.com/in/joao-f-andrade/" target="_blanck">João Andrade</a></li>
+                    <li>background image by <a href="https://www.pexels.com/@ifreestock?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_black">Toni Cuenca</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>
